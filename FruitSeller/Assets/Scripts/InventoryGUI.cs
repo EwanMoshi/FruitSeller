@@ -60,16 +60,13 @@ public class InventoryGUI : MonoBehaviour {
 		GUILayout.BeginHorizontal ();
 
 		Item keyItem = new Item (0, "Key", iconRustyKey, "This key is really rusty.");
+		Inventory [0] = keyItem;
 
 		for (int i = 0; i < NUM_ITEMS; i++) {
-			Item item = Inventory[i];
-			if (item == null) {
-				GUILayout.Button (string.Empty, GUILayout.Height (50), GUILayout.Width (50));
-			}
-			else {
-				Texture2D img = item.icon;
-				GUILayout.Button(img, GUILayout.Height (50), GUILayout.Width(50));
-			}
+			if (Inventory [i] == null)
+				GUILayout.Button (string.Empty, GUILayout.Height (ITEM_WIDTH), GUILayout.Width (ITEM_WIDTH));
+			else
+				GUILayout.Button (Inventory [i].icon, GUILayout.Height (ITEM_WIDTH), GUILayout.Width (ITEM_WIDTH));
 		}
 		
 		GUILayout.EndHorizontal ();
