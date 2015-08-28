@@ -7,27 +7,46 @@ public class InventoryGUI : MonoBehaviour {
 	// GUI drawing constants.
 	static int WIDTH_INDENT = 100;
 	static int ITEM_WIDTH = 50;
-	
+
 	// GUI stuff.
 	private Rect inventoryWindowRect = new Rect(WIDTH_INDENT, Screen.height - 100, InventoryWidth (), 75);
 	private bool inventoryOpen = false;
-	
+
+	// Icons.
+	public Texture2D iconRustyKey;
+
+	// Inventory constants.
+	static int NUM_ITEMS = 8;
+
 	// Convenience method for computing width of inventory based on screen.
 	static int InventoryWidth() {
 		return Screen.width - 2 * WIDTH_INDENT;
 	}
 	
 	// Items in inventory.
-	public List<Item> inventory = new List<Item>();
+	static public Item[] Inventory = new Item[8];
 	
 	// Toggle whether inventory is visible on the GUI.
 	public void toggleInventory () {
 		this.inventoryOpen = !this.inventoryOpen;
 	}
-	
+
+	// Add an item to the inventory. Return 'true' if successful or 'false' otherwise.
+	public bool addItem (Item itm) {
+		for (int i = 0; i < Inventory.Length; i++) {
+			if (Inventory[i] == null) {
+				Inventory[i] = itm;
+				return true;
+			}
+		}
+		return false;
+	}
+
 	// Whenever the GUI redraws.
 	void OnGUI() {
 		GUI.Label (new Rect (50, 50, 100, 50), "Inventory (Tab)");
+
+		// Transparent window.
 		GUI.color = new Color (1, 1, 1, 0);
 		if (inventoryOpen) {
 			inventoryWindowRect = GUI.Window (0, inventoryWindowRect, MakeWindow, "Inventory");
@@ -39,11 +58,18 @@ public class InventoryGUI : MonoBehaviour {
 		
 		GUILayout.BeginArea (new Rect (5, 20, InventoryWidth (), 100));
 		GUILayout.BeginHorizontal ();
-		
-		int numItems = 10;
-		
-		for (int i = 0; i < numItems; i++) {
-			GUILayout.Button ("Item", GUILayout.Height (50), GUILayout.Width (50));
+
+		Item keyItem = new Item (0, "Key", iconRustyKey, "This key is really rusty.");
+
+		for (int i = 0; i < NUM_ITEMS; i++) {
+			Item item = Inventory[i];
+			if (item == null) {
+				GUILayout.Button (string.Empty, GUILayout.Height (50), GUILayout.Width (50));
+			}
+			else {
+				Texture2D img = item.icon;
+				GUILayout.Button(img, GUILayout.Height (50), GUILayout.Width(50));
+			}
 		}
 		
 		GUILayout.EndHorizontal ();
