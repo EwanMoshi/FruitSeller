@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 8d100f2ff4bdd0144a5562807a807cfa
+timeCreated: 1440818476
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Circle_032_Circle_044
+    100002: Circle_033_Circle_046
+    100004: Circle_034_Circle_047
+    100006: Circle_035_Circle_048
+    100008: Circle_036_Circle_049
+    100010: Circle_037_Circle_050
+    100012: Circle_038_Circle_051
+    100014: Circle_039_Circle_052
+    100016: Circle_040_Circle_053
+    100018: Cube_074_Cube_093
+    100020: Cube_075_Cube_094
+    100022: Cube_076_Cube_095
+    100024: Cube_077_Cube_098
+    100026: Cube_078_Cube_099
+    100028: Cube_079_Cube_100
+    100030: Cube_080_Cube_101
+    100032: //RootNode
+    100034: Plane_007_Plane_012
+    100036: Plane_008_Plane_013
+    100038: Plane_009_Plane_016
+    100040: Plane_010_Plane_017
+    100042: Plane_012_Plane_019
+    100044: Plane_013_Plane_020
+    400000: Circle_032_Circle_044
+    400002: Circle_033_Circle_046
+    400004: Circle_034_Circle_047
+    400006: Circle_035_Circle_048
+    400008: Circle_036_Circle_049
+    400010: Circle_037_Circle_050
+    400012: Circle_038_Circle_051
+    400014: Circle_039_Circle_052
+    400016: Circle_040_Circle_053
+    400018: Cube_074_Cube_093
+    400020: Cube_075_Cube_094
+    400022: Cube_076_Cube_095
+    400024: Cube_077_Cube_098
+    400026: Cube_078_Cube_099
+    400028: Cube_079_Cube_100
+    400030: Cube_080_Cube_101
+    400032: //RootNode
+    400034: Plane_007_Plane_012
+    400036: Plane_008_Plane_013
+    400038: Plane_009_Plane_016
+    400040: Plane_010_Plane_017
+    400042: Plane_012_Plane_019
+    400044: Plane_013_Plane_020
+    2300000: Circle_032_Circle_044
+    2300002: Circle_033_Circle_046
+    2300004: Circle_034_Circle_047
+    2300006: Circle_035_Circle_048
+    2300008: Circle_036_Circle_049
+    2300010: Circle_037_Circle_050
+    2300012: Circle_038_Circle_051
+    2300014: Circle_039_Circle_052
+    2300016: Circle_040_Circle_053
+    2300018: Cube_074_Cube_093
+    2300020: Cube_075_Cube_094
+    2300022: Cube_076_Cube_095
+    2300024: Cube_077_Cube_098
+    2300026: Cube_078_Cube_099
+    2300028: Cube_079_Cube_100
+    2300030: Cube_080_Cube_101
+    2300032: Plane_007_Plane_012
+    2300034: Plane_008_Plane_013
+    2300036: Plane_009_Plane_016
+    2300038: Plane_010_Plane_017
+    2300040: Plane_012_Plane_019
+    2300042: Plane_013_Plane_020
+    3300000: Circle_032_Circle_044
+    3300002: Circle_033_Circle_046
+    3300004: Circle_034_Circle_047
+    3300006: Circle_035_Circle_048
+    3300008: Circle_036_Circle_049
+    3300010: Circle_037_Circle_050
+    3300012: Circle_038_Circle_051
+    3300014: Circle_039_Circle_052
+    3300016: Circle_040_Circle_053
+    3300018: Cube_074_Cube_093
+    3300020: Cube_075_Cube_094
+    3300022: Cube_076_Cube_095
+    3300024: Cube_077_Cube_098
+    3300026: Cube_078_Cube_099
+    3300028: Cube_079_Cube_100
+    3300030: Cube_080_Cube_101
+    3300032: Plane_007_Plane_012
+    3300034: Plane_008_Plane_013
+    3300036: Plane_009_Plane_016
+    3300038: Plane_010_Plane_017
+    3300040: Plane_012_Plane_019
+    3300042: Plane_013_Plane_020
+    4300000: Circle_035_Circle_048
+    4300002: Circle_040_Circle_053
+    4300004: Circle_032_Circle_044
+    4300006: Circle_034_Circle_047
+    4300008: Cube_080_Cube_101
+    4300010: Cube_079_Cube_100
+    4300012: Circle_037_Circle_050
+    4300014: Cube_076_Cube_095
+    4300016: Plane_007_Plane_012
+    4300018: Circle_039_Circle_052
+    4300020: Plane_008_Plane_013
+    4300022: Plane_009_Plane_016
+    4300024: Cube_078_Cube_099
+    4300026: Plane_010_Plane_017
+    4300028: Circle_038_Circle_051
+    4300030: Plane_013_Plane_020
+    4300032: Cube_077_Cube_098
+    4300034: Cube_074_Cube_093
+    4300036: Cube_075_Cube_094
+    4300038: Plane_012_Plane_019
+    4300040: Circle_033_Circle_046
+    4300042: Circle_036_Circle_049
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

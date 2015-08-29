@@ -7,11 +7,17 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class InventoryGUI : MonoBehaviour {
 	
 	// GUI drawing constants.
-	static int WIDTH_INDENT = 100;
-	static int ITEM_WIDTH = 50;
+	const int LEFT_OFFSET = 100;
+	const int BOTTOM_OFFSET = 20;
+	const int ITEM_WIDTH = 50;
+	const int GAP = 10;
 
+	// Tooltip constants.
+	const int TOOLTIP_LEFT_OFFSET = LEFT_OFFSET;
+	const int TOOLTIP_BOTTOM_OFFSET = ITEM_WIDTH + BOTTOM_OFFSET + 25;
+	
 	// GUI stuff.
-	private Rect inventoryWindowRect = new Rect(WIDTH_INDENT, Screen.height - 100, InventoryWidth (), 75);
+	private Rect inventoryWindowRect = new Rect(LEFT_OFFSET, Screen.height - 100, InventoryWidth (), 75);
 	private bool inventoryOpen = false;
 
 	// Camera.
@@ -26,7 +32,7 @@ public class InventoryGUI : MonoBehaviour {
 
 	// Convenience method for computing width of inventory based on screen.
 	static int InventoryWidth() {
-		return Screen.width - 2 * WIDTH_INDENT;
+		return NUM_ITEMS * ITEM_WIDTH + (NUM_ITEMS - 1) * GAP;
 	}
 	
 	// Items in inventory.
@@ -62,33 +68,38 @@ public class InventoryGUI : MonoBehaviour {
 		GUI.Label (new Rect (50, 50, 100, 50), "Inventory (Tab)");
 
 		// Transparent window.
-		GUI.color = new Color (1, 1, 1, 0);
+		//GUI.color = new Color (1, 1, 1, 0);
 		if (inventoryOpen) {
-			inventoryWindowRect = GUI.Window (0, inventoryWindowRect, MakeWindow, "Inventory");
+			
+			Item keyItem = new Item (0, "Key", iconRustyKey, "This key is really rusty.");
+			Inventory [0] = keyItem;
+
+			for (int i = 0; i < NUM_ITEMS; i++) {
+			
+				// Compute position on screen to show item.
+				Rect position = new Rect(LEFT_OFFSET + GAP*i + ITEM_WIDTH*i,
+				                         Screen.height - ITEM_WIDTH - BOTTOM_OFFSET,
+				                         ITEM_WIDTH, ITEM_WIDTH);
+
+				// If there's an item in the slot get the content.
+				GUIContent content;
+				if (Inventory[i] == null) content = new GUIContent();
+				else content = new GUIContent(string.Empty, Inventory[i].icon, Inventory[i].description);
+
+				// Display content.
+				GUI.Button(position, content);
+
+			}
+
+			// Display currently seleted tooltip (this is "GUI.tooltip").
+			GUI.Label (new Rect (TOOLTIP_LEFT_OFFSET,
+			                     Screen.height - TOOLTIP_BOTTOM_OFFSET,
+			                     InventoryWidth (),
+			                     20), GUI.tooltip);
+
 		}
 	}
-	
-	// Draw items in inventory window.
-	void MakeWindow(int windowId) {
-		
-		GUILayout.BeginArea (new Rect (5, 20, InventoryWidth (), 100));
-		GUILayout.BeginHorizontal ();
 
-		Item keyItem = new Item (0, "Key", iconRustyKey, "This key is really rusty.");
-		Inventory [0] = keyItem;
-
-		for (int i = 0; i < NUM_ITEMS; i++) {
-			if (Inventory [i] == null)
-				GUILayout.Button (string.Empty, GUILayout.Height (ITEM_WIDTH), GUILayout.Width (ITEM_WIDTH));
-			else
-				GUILayout.Button (Inventory [i].icon, GUILayout.Height (ITEM_WIDTH), GUILayout.Width (ITEM_WIDTH));
-		}
-		
-		GUILayout.EndHorizontal ();
-		GUILayout.EndArea ();
-		
-	}
-	
 	// Use this for initialization
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
