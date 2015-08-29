@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: ab4431fc4c5f27f4ca1e242f6ae03a1e
+timeCreated: 1440822132
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bath-back-panel_Plane_014
+    100004: bath-drain-black_Circle_011
+    100006: Bath-drain-grill_Circle_008
+    100008: Bath-Plughole-edge_Circle_009
+    100010: Bath-Tap-Right-Cold_Cylinder_003
+    100012: Bath_Plane_001
+    100014: BatTap-Right-Hot_Cylinder_004
+    100016: BTap-Left-Hot-top_Cylinder_005
+    100018: BTap-Right-Cold-top_Cylinder_002
+    100020: Circle_001_Circle_016
+    100022: Circle_002_Circle_017
+    100024: Circle_004_Circle_014
+    100026: Circle_006_Circle_007
+    100028: Circle_Circle_010
+    100030: Cylinder_003_Cylinder_015
+    100032: Cylinder_004_Cylinder_016
+    100034: Plug-loop_001_Cylinder_009
+    400000: //RootNode
+    400002: Bath-back-panel_Plane_014
+    400004: bath-drain-black_Circle_011
+    400006: Bath-drain-grill_Circle_008
+    400008: Bath-Plughole-edge_Circle_009
+    400010: Bath-Tap-Right-Cold_Cylinder_003
+    400012: Bath_Plane_001
+    400014: BatTap-Right-Hot_Cylinder_004
+    400016: BTap-Left-Hot-top_Cylinder_005
+    400018: BTap-Right-Cold-top_Cylinder_002
+    400020: Circle_001_Circle_016
+    400022: Circle_002_Circle_017
+    400024: Circle_004_Circle_014
+    400026: Circle_006_Circle_007
+    400028: Circle_Circle_010
+    400030: Cylinder_003_Cylinder_015
+    400032: Cylinder_004_Cylinder_016
+    400034: Plug-loop_001_Cylinder_009
+    2300000: Bath-back-panel_Plane_014
+    2300002: bath-drain-black_Circle_011
+    2300004: Bath-drain-grill_Circle_008
+    2300006: Bath-Plughole-edge_Circle_009
+    2300008: Bath-Tap-Right-Cold_Cylinder_003
+    2300010: Bath_Plane_001
+    2300012: BatTap-Right-Hot_Cylinder_004
+    2300014: BTap-Left-Hot-top_Cylinder_005
+    2300016: BTap-Right-Cold-top_Cylinder_002
+    2300018: Circle_001_Circle_016
+    2300020: Circle_002_Circle_017
+    2300022: Circle_004_Circle_014
+    2300024: Circle_006_Circle_007
+    2300026: Circle_Circle_010
+    2300028: Cylinder_003_Cylinder_015
+    2300030: Cylinder_004_Cylinder_016
+    2300032: Plug-loop_001_Cylinder_009
+    3300000: Bath-back-panel_Plane_014
+    3300002: bath-drain-black_Circle_011
+    3300004: Bath-drain-grill_Circle_008
+    3300006: Bath-Plughole-edge_Circle_009
+    3300008: Bath-Tap-Right-Cold_Cylinder_003
+    3300010: Bath_Plane_001
+    3300012: BatTap-Right-Hot_Cylinder_004
+    3300014: BTap-Left-Hot-top_Cylinder_005
+    3300016: BTap-Right-Cold-top_Cylinder_002
+    3300018: Circle_001_Circle_016
+    3300020: Circle_002_Circle_017
+    3300022: Circle_004_Circle_014
+    3300024: Circle_006_Circle_007
+    3300026: Circle_Circle_010
+    3300028: Cylinder_003_Cylinder_015
+    3300030: Cylinder_004_Cylinder_016
+    3300032: Plug-loop_001_Cylinder_009
+    4300000: Circle_Circle_010
+    4300002: Bath-Plughole-edge_Circle_009
+    4300004: bath-drain-black_Circle_011
+    4300006: Circle_002_Circle_017
+    4300008: Cylinder_003_Cylinder_015
+    4300010: BatTap-Right-Hot_Cylinder_004
+    4300012: BTap-Right-Cold-top_Cylinder_002
+    4300014: Bath-drain-grill_Circle_008
+    4300016: Circle_001_Circle_016
+    4300018: Plug-loop_001_Cylinder_009
+    4300020: Bath_Plane_001
+    4300022: Circle_004_Circle_014
+    4300024: Cylinder_004_Cylinder_016
+    4300026: Bath-Tap-Right-Cold_Cylinder_003
+    4300028: BTap-Left-Hot-top_Cylinder_005
+    4300030: Circle_006_Circle_007
+    4300032: Bath-back-panel_Plane_014
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
