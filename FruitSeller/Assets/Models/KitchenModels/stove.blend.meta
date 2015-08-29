@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: d1293c2d0f6f62d43a378b90994886df
+timeCreated: 1440818535
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bottomstorage
+    100002: burner
+    100004: burner_1
+    100006: burner_2
+    100008: burner_3
+    100010: Controlpanel
+    100012: knob
+    100014: knob_1
+    100016: knob_2
+    100018: knob_3
+    100020: newcover
+    100022: newcover_1
+    100024: newcover_2
+    100026: newcover_3
+    100028: Ovendoor
+    100030: ovenwindow
+    100032: PolyMesh_1
+    100034: PolyMesh_4
+    100036: //RootNode
+    100038: stoveshell
+    400000: bottomstorage
+    400002: burner
+    400004: burner_1
+    400006: burner_2
+    400008: burner_3
+    400010: Controlpanel
+    400012: knob
+    400014: knob_1
+    400016: knob_2
+    400018: knob_3
+    400020: newcover
+    400022: newcover_1
+    400024: newcover_2
+    400026: newcover_3
+    400028: Ovendoor
+    400030: ovenwindow
+    400032: PolyMesh_1
+    400034: PolyMesh_4
+    400036: //RootNode
+    400038: stoveshell
+    2300000: bottomstorage
+    2300002: burner
+    2300004: burner_1
+    2300006: burner_2
+    2300008: burner_3
+    2300010: Controlpanel
+    2300012: knob
+    2300014: knob_1
+    2300016: knob_2
+    2300018: knob_3
+    2300020: newcover
+    2300022: newcover_1
+    2300024: newcover_2
+    2300026: newcover_3
+    2300028: Ovendoor
+    2300030: ovenwindow
+    2300032: PolyMesh_1
+    2300034: PolyMesh_4
+    2300036: stoveshell
+    3300000: bottomstorage
+    3300002: burner
+    3300004: burner_1
+    3300006: burner_2
+    3300008: burner_3
+    3300010: Controlpanel
+    3300012: knob
+    3300014: knob_1
+    3300016: knob_2
+    3300018: knob_3
+    3300020: newcover
+    3300022: newcover_1
+    3300024: newcover_2
+    3300026: newcover_3
+    3300028: Ovendoor
+    3300030: ovenwindow
+    3300032: PolyMesh_1
+    3300034: PolyMesh_4
+    3300036: stoveshell
+    4300000: burner_2
+    4300002: bottomstorage
+    4300004: knob
+    4300006: knob_2
+    4300008: Controlpanel
+    4300010: PolyMesh_4
+    4300012: knob_1
+    4300014: newcover
+    4300016: burner_3
+    4300018: Ovendoor
+    4300020: newcover_1
+    4300022: knob_3
+    4300024: PolyMesh_1
+    4300026: newcover_3
+    4300028: burner_1
+    4300030: stoveshell
+    4300032: ovenwindow
+    4300034: newcover_2
+    4300036: burner
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

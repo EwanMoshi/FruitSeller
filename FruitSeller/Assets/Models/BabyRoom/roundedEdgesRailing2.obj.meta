@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: d05c12e5ff31d2a43b18959526176311
+timeCreated: 1440816363
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Extruded_Object_3
+    100002: Extruded_Object_3_1
+    100004: Extruded_Object_3_2
+    100006: Extruded_Object_3_3
+    100008: Extruded_Object_3_4
+    100010: Extruded_Object_3_5
+    100012: Extruded_Object_4
+    100014: Extruded_Object_4_1
+    100016: Extruded_Object_4_10
+    100018: Extruded_Object_4_11
+    100020: Extruded_Object_4_12
+    100022: Extruded_Object_4_2
+    100024: Extruded_Object_4_3
+    100026: Extruded_Object_4_4
+    100028: Extruded_Object_4_5
+    100030: Extruded_Object_4_6
+    100032: Extruded_Object_4_7
+    100034: Extruded_Object_4_8
+    100036: Extruded_Object_4_9
+    100038: //RootNode
+    400000: Extruded_Object_3
+    400002: Extruded_Object_3_1
+    400004: Extruded_Object_3_2
+    400006: Extruded_Object_3_3
+    400008: Extruded_Object_3_4
+    400010: Extruded_Object_3_5
+    400012: Extruded_Object_4
+    400014: Extruded_Object_4_1
+    400016: Extruded_Object_4_10
+    400018: Extruded_Object_4_11
+    400020: Extruded_Object_4_12
+    400022: Extruded_Object_4_2
+    400024: Extruded_Object_4_3
+    400026: Extruded_Object_4_4
+    400028: Extruded_Object_4_5
+    400030: Extruded_Object_4_6
+    400032: Extruded_Object_4_7
+    400034: Extruded_Object_4_8
+    400036: Extruded_Object_4_9
+    400038: //RootNode
+    2300000: Extruded_Object_3
+    2300002: Extruded_Object_3_1
+    2300004: Extruded_Object_3_2
+    2300006: Extruded_Object_3_3
+    2300008: Extruded_Object_3_4
+    2300010: Extruded_Object_3_5
+    2300012: Extruded_Object_4
+    2300014: Extruded_Object_4_1
+    2300016: Extruded_Object_4_10
+    2300018: Extruded_Object_4_11
+    2300020: Extruded_Object_4_12
+    2300022: Extruded_Object_4_2
+    2300024: Extruded_Object_4_3
+    2300026: Extruded_Object_4_4
+    2300028: Extruded_Object_4_5
+    2300030: Extruded_Object_4_6
+    2300032: Extruded_Object_4_7
+    2300034: Extruded_Object_4_8
+    2300036: Extruded_Object_4_9
+    3300000: Extruded_Object_3
+    3300002: Extruded_Object_3_1
+    3300004: Extruded_Object_3_2
+    3300006: Extruded_Object_3_3
+    3300008: Extruded_Object_3_4
+    3300010: Extruded_Object_3_5
+    3300012: Extruded_Object_4
+    3300014: Extruded_Object_4_1
+    3300016: Extruded_Object_4_10
+    3300018: Extruded_Object_4_11
+    3300020: Extruded_Object_4_12
+    3300022: Extruded_Object_4_2
+    3300024: Extruded_Object_4_3
+    3300026: Extruded_Object_4_4
+    3300028: Extruded_Object_4_5
+    3300030: Extruded_Object_4_6
+    3300032: Extruded_Object_4_7
+    3300034: Extruded_Object_4_8
+    3300036: Extruded_Object_4_9
+    4300000: Extruded_Object_3
+    4300002: Extruded_Object_3_1
+    4300004: Extruded_Object_3_2
+    4300006: Extruded_Object_3_3
+    4300008: Extruded_Object_3_4
+    4300010: Extruded_Object_3_5
+    4300012: Extruded_Object_4
+    4300014: Extruded_Object_4_1
+    4300016: Extruded_Object_4_10
+    4300018: Extruded_Object_4_11
+    4300020: Extruded_Object_4_12
+    4300022: Extruded_Object_4_2
+    4300024: Extruded_Object_4_3
+    4300026: Extruded_Object_4_4
+    4300028: Extruded_Object_4_5
+    4300030: Extruded_Object_4_6
+    4300032: Extruded_Object_4_7
+    4300034: Extruded_Object_4_8
+    4300036: Extruded_Object_4_9
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

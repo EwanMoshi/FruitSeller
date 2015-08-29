@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 490e15443661a7041b1a09628844af54
+timeCreated: 1440818446
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cube_3
+    100002: Drain
+    100004: Draincover
+    100006: fawcetcollar
+    100008: //RootNode
+    100010: PolyMesh_1
+    100012: PolyMesh_1_1
+    100014: PolyMesh_1_2
+    100016: PolyMesh_1_3
+    100018: PolyMesh_1_4
+    100020: PolyMesh_1_5
+    100022: PolyMesh_1_6
+    100024: PolyMesh_1_7
+    100026: PolyMesh_2
+    100028: PolyMesh_2_1
+    100030: PolyMesh_2_2
+    100032: PolyMesh_3
+    100034: Spline_Mesh_4
+    100036: Spline_Mesh_4_1
+    100038: Spline_Mesh_4_2
+    100040: Spline_Mesh_4_3
+    100042: Tube_1
+    100044: Tube_1_1
+    100046: Tube_1_2
+    100048: Tube_1_3
+    100050: verthandle
+    100052: verthandle_1
+    400000: Cube_3
+    400002: Drain
+    400004: Draincover
+    400006: fawcetcollar
+    400008: //RootNode
+    400010: PolyMesh_1
+    400012: PolyMesh_1_1
+    400014: PolyMesh_1_2
+    400016: PolyMesh_1_3
+    400018: PolyMesh_1_4
+    400020: PolyMesh_1_5
+    400022: PolyMesh_1_6
+    400024: PolyMesh_1_7
+    400026: PolyMesh_2
+    400028: PolyMesh_2_1
+    400030: PolyMesh_2_2
+    400032: PolyMesh_3
+    400034: Spline_Mesh_4
+    400036: Spline_Mesh_4_1
+    400038: Spline_Mesh_4_2
+    400040: Spline_Mesh_4_3
+    400042: Tube_1
+    400044: Tube_1_1
+    400046: Tube_1_2
+    400048: Tube_1_3
+    400050: verthandle
+    400052: verthandle_1
+    2300000: Cube_3
+    2300002: Drain
+    2300004: Draincover
+    2300006: fawcetcollar
+    2300008: PolyMesh_1
+    2300010: PolyMesh_1_1
+    2300012: PolyMesh_1_2
+    2300014: PolyMesh_1_3
+    2300016: PolyMesh_1_4
+    2300018: PolyMesh_1_5
+    2300020: PolyMesh_1_6
+    2300022: PolyMesh_1_7
+    2300024: PolyMesh_2
+    2300026: PolyMesh_2_1
+    2300028: PolyMesh_2_2
+    2300030: PolyMesh_3
+    2300032: Spline_Mesh_4
+    2300034: Spline_Mesh_4_1
+    2300036: Spline_Mesh_4_2
+    2300038: Spline_Mesh_4_3
+    2300040: Tube_1
+    2300042: Tube_1_1
+    2300044: Tube_1_2
+    2300046: Tube_1_3
+    2300048: verthandle
+    2300050: verthandle_1
+    3300000: Cube_3
+    3300002: Drain
+    3300004: Draincover
+    3300006: fawcetcollar
+    3300008: PolyMesh_1
+    3300010: PolyMesh_1_1
+    3300012: PolyMesh_1_2
+    3300014: PolyMesh_1_3
+    3300016: PolyMesh_1_4
+    3300018: PolyMesh_1_5
+    3300020: PolyMesh_1_6
+    3300022: PolyMesh_1_7
+    3300024: PolyMesh_2
+    3300026: PolyMesh_2_1
+    3300028: PolyMesh_2_2
+    3300030: PolyMesh_3
+    3300032: Spline_Mesh_4
+    3300034: Spline_Mesh_4_1
+    3300036: Spline_Mesh_4_2
+    3300038: Spline_Mesh_4_3
+    3300040: Tube_1
+    3300042: Tube_1_1
+    3300044: Tube_1_2
+    3300046: Tube_1_3
+    3300048: verthandle
+    3300050: verthandle_1
+    4300000: PolyMesh_2
+    4300002: PolyMesh_1_5
+    4300004: Spline_Mesh_4_1
+    4300006: Tube_1_2
+    4300008: Tube_1
+    4300010: Spline_Mesh_4_3
+    4300012: PolyMesh_1_4
+    4300014: Cube_3
+    4300016: Tube_1_1
+    4300018: Draincover
+    4300020: verthandle
+    4300022: PolyMesh_1_1
+    4300024: Drain
+    4300026: PolyMesh_2_2
+    4300028: Spline_Mesh_4
+    4300030: Spline_Mesh_4_2
+    4300032: verthandle_1
+    4300034: Tube_1_3
+    4300036: fawcetcollar
+    4300038: PolyMesh_1_7
+    4300040: PolyMesh_2_1
+    4300042: PolyMesh_1
+    4300044: PolyMesh_1_3
+    4300046: PolyMesh_3
+    4300048: PolyMesh_1_2
+    4300050: PolyMesh_1_6
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
