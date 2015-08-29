@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using UnityStandardAssets.Characters.FirstPerson;
+
 public class InventoryGUI : MonoBehaviour {
 	
 	// GUI drawing constants.
@@ -11,6 +13,10 @@ public class InventoryGUI : MonoBehaviour {
 	// GUI stuff.
 	private Rect inventoryWindowRect = new Rect(WIDTH_INDENT, Screen.height - 100, InventoryWidth (), 75);
 	private bool inventoryOpen = false;
+
+	// Camera.
+	public Camera playerCam;
+	public MouseLook mouselook;
 
 	// Icons.
 	public Texture2D iconRustyKey;
@@ -28,7 +34,15 @@ public class InventoryGUI : MonoBehaviour {
 	
 	// Toggle whether inventory is visible on the GUI.
 	public void toggleInventory () {
-		this.inventoryOpen = !this.inventoryOpen;
+		if (!this.inventoryOpen) {
+			this.inventoryOpen = true;
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+		} else {
+			this.inventoryOpen = false;
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
 	}
 
 	// Add an item to the inventory. Return 'true' if successful or 'false' otherwise.
@@ -44,6 +58,7 @@ public class InventoryGUI : MonoBehaviour {
 
 	// Whenever the GUI redraws.
 	void OnGUI() {
+
 		GUI.Label (new Rect (50, 50, 100, 50), "Inventory (Tab)");
 
 		// Transparent window.
@@ -76,7 +91,8 @@ public class InventoryGUI : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame

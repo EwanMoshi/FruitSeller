@@ -10,4 +10,7 @@ public class GameStartScript : MonoBehaviour {
 		Application.LoadLevel("Neal_Test");
 	}
 
+	void Start () {
+	}
+
 }
