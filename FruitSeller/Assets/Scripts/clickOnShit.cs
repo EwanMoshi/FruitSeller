@@ -11,13 +11,22 @@ public class clickOnShit : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+	bool interactive (string tag) {
+		return tag.Equals ("interactive") || tag.Equals ("item + interactive");
+	}
+
+	bool pickupable (string tag) {
+		return tag.Equals ("item") || tag.Equals ("item + interactive");
+	}
+
 	// Update is called once per frame
 	void Update () {
 
 		if (Input.GetKeyDown(KeyCode.E)) {
 			Ray ray = Camera.main.ScreenPointToRay(new Vector3( Screen.width / 2, Screen.height / 2, 0));
 			RaycastHit hit;
+			Debug.Log ("Hello");
 
 			if (Physics.Raycast(ray, out hit)) {
 
@@ -34,8 +43,14 @@ public class clickOnShit : MonoBehaviour {
 					light.clicked();
 
 				}
+				
+				if (interactive(hit.collider.tag) && hit.distance < range) {
+					GameObject obj = hit.collider.gameObject;
+					InteractiveBehaviour ib = obj.GetComponent<InteractiveBehaviour>();
+					InventoryGUI.SetInteractiveDisplay(ib.interactiveDescription, ib.timeToDisplay);
+				}
 
-				else if (hit.collider.tag.Equals ("item") && hit.distance < range){
+				if (pickupable(hit.collider.tag) && hit.distance < range){
 					GameObject obj = hit.collider.gameObject;
 					ItemBehaviour item = obj.GetComponent<ItemBehaviour>();
 
@@ -48,12 +63,6 @@ public class clickOnShit : MonoBehaviour {
 						Destroy(obj);
 					}
 
-				}
-
-				else if (hit.collider.tag.Equals ("interactive") && hit.distance < range) {
-					GameObject obj = hit.collider.gameObject;
-					InteractiveBehaviour ib = obj.GetComponent<InteractiveBehaviour>();
-					InventoryGUI.SetInteractiveDisplay(ib.interactiveDescription, ib.timeToDisplay);
 				}
 
 			}
