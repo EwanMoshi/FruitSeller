@@ -50,7 +50,8 @@ public class InventoryGUI : MonoBehaviour {
 			if (Inventory[i] == null) {
 				Inventory[i] = new Item(itemBehaviour.itemName,
 				                    itemBehaviour.icon,
-				                    itemBehaviour.description);
+				                    itemBehaviour.description,
+				                    itemBehaviour.itemHandler);
 				return true;
 			}
 		}
@@ -86,15 +87,13 @@ public class InventoryGUI : MonoBehaviour {
 				else content = new GUIContent(string.Empty, Inventory[i].icon, Inventory[i].description);
 
 				// Display content.
-				GUI.Button(position, content);
 
+				if (GUI.Button(position, content)) {
+					if (Inventory[i] != null) Inventory[i].Use();
+				}
 			}
 
 			// Display currently seleted tooltip (this is "GUI.tooltip").
-			string itemName = GUI.GetNameOfFocusedControl();
-			Debug.Log(itemName);
-
-
 			GUI.Label (new Rect (TOOLTIP_LEFT_OFFSET,
 			                     Screen.height - TOOLTIP_BOTTOM_OFFSET - 15,
 			                     InventoryWidth (),
@@ -117,11 +116,17 @@ public class InventoryGUI : MonoBehaviour {
 		public string name;
 		public string description;
 		public Texture2D icon;
+		public ItemHandler handler;
 
-		public Item (string name_, Texture2D icon_, string description_) {
+		public Item (string name_, Texture2D icon_, string description_, ItemHandler handler_) {
 			name = name_;
 			description = name_ + "\n" + description_;
 			icon = icon_;
+			handler = handler_;
+		}
+
+		public void Use () {
+			handler.Use ();
 		}
 	}
 
