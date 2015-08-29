@@ -15,7 +15,17 @@ public class InventoryGUI : MonoBehaviour {
 	// Tooltip constants.
 	const int TOOLTIP_LEFT_OFFSET = LEFT_OFFSET;
 	const int TOOLTIP_BOTTOM_OFFSET = ITEM_WIDTH + BOTTOM_OFFSET + 25;
-	
+
+	// Interactive display constants.
+	const int INTERACTIVE_LEFT_OFFSET = LEFT_OFFSET;
+	const int INTERACTIVE_BOTTOM_OFFSET = TOOLTIP_BOTTOM_OFFSET + 50;
+	const int FADEOUT = 2; // how long it takes for description to fade out.
+
+	// Current interactive description being displayed.
+	static string interactiveDisplay;
+	static float timeToDisplay;
+	static float timeStarted;
+
 	// GUI stuff.
 	private Rect inventoryWindowRect = new Rect(LEFT_OFFSET, Screen.height - 100, InventoryWidth (), 75);
 	private bool inventoryOpen = false;
@@ -100,13 +110,61 @@ public class InventoryGUI : MonoBehaviour {
 			                     Screen.height - TOOLTIP_BOTTOM_OFFSET - 15,
 			                     InventoryWidth (),
 			                     60), GUI.tooltip);
+
+			// Display current interactive display.
+			if (interactiveDisplay != string.Empty) {
+
+				// Check whether the display should be removed.
+				float timeNow = Time.time;
+				if (timeNow - timeStarted > timeToDisplay + FADEOUT) {
+					interactiveDisplay = string.Empty;
+
+				}
+
+				// Display current interactive text.
+				// Fade out if need be.
+				else {
+
+					// Position of interactive text.
+					Rect position = new Rect(INTERACTIVE_LEFT_OFFSET,
+				     	                  	 Screen.height - INTERACTIVE_BOTTOM_OFFSET - 15,
+					                         InventoryWidth(), 60);
+
+					// Set alpha based on time to fadeout.
+					// Inject f : (0,FADEOUT) -> (0,1)
+					// The input x is the amount of time of FADEOUT elapsed. 
+					float x = (timeToDisplay + FADEOUT) - (timeNow - timeStarted);
+					float alpha = x / FADEOUT;
+
+					float r = GUI.color.r;
+					float g = GUI.color.g;
+					float b = GUI.color.b;
+					GUI.color = new Color(r,g,b,alpha);
+					GUI.Label(position, interactiveDisplay);
+					GUI.color = new Color(r,g,b,1);
+				}
+
+			}
+
 		}
+	}
+
+	// Set some text to be displayed on the gui.
+	// text : what should be displayed
+	// displayTime : how long to display (in seconds)
+	public void SetInteractiveDisplay (string text, float displayTime) {
+		interactiveDisplay = string.Empty;
+		timeToDisplay = displayTime;
+		timeStarted = Time.time;
 	}
 
 	// Use this for initialization
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
+		interactiveDisplay = string.Empty;
+		timeToDisplay = 0f;
+		timeStarted = 0f;
 	}
 	
 	// Update is called once per frame
