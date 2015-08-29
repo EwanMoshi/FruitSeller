@@ -18,7 +18,11 @@ public class ItemPlaySound : ItemHandler {
 	}
 
 	public override bool Consumes() {
-		return false;
+		return true;
+	}
+
+	public override bool Usable() {
+		return true;
 	}
 
 }
