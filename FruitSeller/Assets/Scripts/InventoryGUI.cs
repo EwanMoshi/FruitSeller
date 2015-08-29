@@ -20,13 +20,6 @@ public class InventoryGUI : MonoBehaviour {
 	private Rect inventoryWindowRect = new Rect(LEFT_OFFSET, Screen.height - 100, InventoryWidth (), 75);
 	private bool inventoryOpen = false;
 
-	// Camera.
-	public Camera playerCam;
-	public MouseLook mouselook;
-
-	// Icons.
-	public Texture2D iconRustyKey;
-
 	// Inventory constants.
 	static int NUM_ITEMS = 8;
 
@@ -52,12 +45,21 @@ public class InventoryGUI : MonoBehaviour {
 	}
 
 	// Add an item to the inventory. Return 'true' if successful or 'false' otherwise.
-	public bool addItem (Item itm) {
+	public static bool addItem (ItemBehaviour itemBehaviour) {
 		for (int i = 0; i < Inventory.Length; i++) {
 			if (Inventory[i] == null) {
-				Inventory[i] = itm;
+				Inventory[i] = new Item(itemBehaviour.itemName,
+				                    itemBehaviour.icon,
+				                    itemBehaviour.description);
 				return true;
 			}
+		}
+		return false;
+	}
+
+	public static bool hasSpace () {
+		for (int i = 0; i < Inventory.Length; i++) {
+			if (Inventory[i] == null) return true;
 		}
 		return false;
 	}
@@ -70,9 +72,6 @@ public class InventoryGUI : MonoBehaviour {
 		// Transparent window.
 		//GUI.color = new Color (1, 1, 1, 0);
 		if (inventoryOpen) {
-			
-			Item keyItem = new Item (0, "Key", iconRustyKey, "This key is really rusty.");
-			Inventory [0] = keyItem;
 
 			for (int i = 0; i < NUM_ITEMS; i++) {
 			
@@ -81,7 +80,7 @@ public class InventoryGUI : MonoBehaviour {
 				                         Screen.height - ITEM_WIDTH - BOTTOM_OFFSET,
 				                         ITEM_WIDTH, ITEM_WIDTH);
 
-				// If there's an item in the slot get the content.
+				// If there's an item in the slot get the content	.
 				GUIContent content;
 				if (Inventory[i] == null) content = new GUIContent();
 				else content = new GUIContent(string.Empty, Inventory[i].icon, Inventory[i].description);
@@ -92,11 +91,14 @@ public class InventoryGUI : MonoBehaviour {
 			}
 
 			// Display currently seleted tooltip (this is "GUI.tooltip").
-			GUI.Label (new Rect (TOOLTIP_LEFT_OFFSET,
-			                     Screen.height - TOOLTIP_BOTTOM_OFFSET,
-			                     InventoryWidth (),
-			                     20), GUI.tooltip);
+			string itemName = GUI.GetNameOfFocusedControl();
+			Debug.Log(itemName);
 
+
+			GUI.Label (new Rect (TOOLTIP_LEFT_OFFSET,
+			                     Screen.height - TOOLTIP_BOTTOM_OFFSET - 15,
+			                     InventoryWidth (),
+			                     60), GUI.tooltip);
 		}
 	}
 
@@ -110,4 +112,17 @@ public class InventoryGUI : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public class Item {
+		public string name;
+		public string description;
+		public Texture2D icon;
+
+		public Item (string name_, Texture2D icon_, string description_) {
+			name = name_;
+			description = name_ + "\n" + description_;
+			icon = icon_;
+		}
+	}
+
 }
