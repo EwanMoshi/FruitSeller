@@ -87,9 +87,11 @@ public class InventoryGUI : MonoBehaviour {
 				else content = new GUIContent(string.Empty, Inventory[i].icon, Inventory[i].description);
 
 				// Display content.
-
 				if (GUI.Button(position, content)) {
-					if (Inventory[i] != null) Inventory[i].Use();
+					if (Inventory[i] != null) {
+						Inventory[i].Use ();
+						if (Inventory[i].Consumable()) Inventory[i] = null;
+					}
 				}
 			}
 
@@ -127,6 +129,10 @@ public class InventoryGUI : MonoBehaviour {
 
 		public void Use () {
 			handler.Use ();
+		}
+
+		public bool Consumable () {
+			return handler.Consumes();
 		}
 	}
 
