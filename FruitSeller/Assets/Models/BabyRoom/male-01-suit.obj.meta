@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: cf616c4eaa4e5384b8c414c45edec0bc
+timeCreated: 1440816648
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: male_male_cornea
+    100004: male_male_eyeball
+    100006: male_male_gums
+    100008: male_male_hair_Chris
+    100010: male_male_iris
+    100012: male_male_lips2
+    100014: male_male_shadeless_black
+    100016: male_male_shirt
+    100018: male_male_shoe_leather
+    100020: male_male_skin
+    100022: male_male_suit
+    100024: male_male_teeth
+    100026: male_male_tie
+    400000: //RootNode
+    400002: male_male_cornea
+    400004: male_male_eyeball
+    400006: male_male_gums
+    400008: male_male_hair_Chris
+    400010: male_male_iris
+    400012: male_male_lips2
+    400014: male_male_shadeless_black
+    400016: male_male_shirt
+    400018: male_male_shoe_leather
+    400020: male_male_skin
+    400022: male_male_suit
+    400024: male_male_teeth
+    400026: male_male_tie
+    2300000: male_male_cornea
+    2300002: male_male_eyeball
+    2300004: male_male_gums
+    2300006: male_male_hair_Chris
+    2300008: male_male_iris
+    2300010: male_male_lips2
+    2300012: male_male_shadeless_black
+    2300014: male_male_shirt
+    2300016: male_male_shoe_leather
+    2300018: male_male_skin
+    2300020: male_male_suit
+    2300022: male_male_teeth
+    2300024: male_male_tie
+    3300000: male_male_cornea
+    3300002: male_male_eyeball
+    3300004: male_male_gums
+    3300006: male_male_hair_Chris
+    3300008: male_male_iris
+    3300010: male_male_lips2
+    3300012: male_male_shadeless_black
+    3300014: male_male_shirt
+    3300016: male_male_shoe_leather
+    3300018: male_male_skin
+    3300020: male_male_suit
+    3300022: male_male_teeth
+    3300024: male_male_tie
+    4300000: male_male_cornea
+    4300002: male_male_eyeball
+    4300004: male_male_gums
+    4300006: male_male_hair_Chris
+    4300008: male_male_iris
+    4300010: male_male_lips2
+    4300012: male_male_shadeless_black
+    4300014: male_male_shirt
+    4300016: male_male_shoe_leather
+    4300018: male_male_skin
+    4300020: male_male_suit
+    4300022: male_male_teeth
+    4300024: male_male_tie
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
