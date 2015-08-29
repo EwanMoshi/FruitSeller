@@ -5,6 +5,8 @@ public class mannequinspawn : MonoBehaviour {
 
 	public Transform spawnPoint;
 	public GameObject prefab;
+	public Light turnOff;
+
 	private Vector3 spawned;
 
 	private bool hasPlayedEnter = false;
@@ -24,6 +26,8 @@ public class mannequinspawn : MonoBehaviour {
 		if (other.gameObject.tag == "player" && !hasPlayedExit) {
 		
 			Instantiate(prefab, spawned, transform.localRotation);
+
+			turnOff.enabled = !turnOff.enabled;
 
 			spawnPoint.GetComponent<AudioSource>().Play();
 		    
