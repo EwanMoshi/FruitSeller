@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 77cbd494f848c14449220dbbc22602b1
+timeCreated: 1440822117
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bouton_gold1
+    100002: bouton_gold2
+    100004: commande
+    100006: corps
+    100008: credence
+    100010: meuble
+    100012: plan_vasque
+    100014: siphon_silver1
+    100016: siphon_silver2
+    100018: socle
+    100020: sous_plan
+    100022: sweethome3d_window_pane
+    100024: tube
+    100026: vasque1
+    100028: vasque2
+    100030: //RootNode
+    400000: bouton_gold1
+    400002: bouton_gold2
+    400004: commande
+    400006: corps
+    400008: credence
+    400010: meuble
+    400012: plan_vasque
+    400014: siphon_silver1
+    400016: siphon_silver2
+    400018: socle
+    400020: sous_plan
+    400022: sweethome3d_window_pane
+    400024: tube
+    400026: vasque1
+    400028: vasque2
+    400030: //RootNode
+    2300000: bouton_gold1
+    2300002: bouton_gold2
+    2300004: commande
+    2300006: corps
+    2300008: credence
+    2300010: meuble
+    2300012: plan_vasque
+    2300014: siphon_silver1
+    2300016: siphon_silver2
+    2300018: socle
+    2300020: sous_plan
+    2300022: sweethome3d_window_pane
+    2300024: tube
+    2300026: vasque1
+    2300028: vasque2
+    3300000: bouton_gold1
+    3300002: bouton_gold2
+    3300004: commande
+    3300006: corps
+    3300008: credence
+    3300010: meuble
+    3300012: plan_vasque
+    3300014: siphon_silver1
+    3300016: siphon_silver2
+    3300018: socle
+    3300020: sous_plan
+    3300022: sweethome3d_window_pane
+    3300024: tube
+    3300026: vasque1
+    3300028: vasque2
+    4300000: bouton_gold2
+    4300002: siphon_silver1
+    4300004: meuble
+    4300006: plan_vasque
+    4300008: corps
+    4300010: sweethome3d_window_pane
+    4300012: sous_plan
+    4300014: credence
+    4300016: vasque1
+    4300018: commande
+    4300020: bouton_gold1
+    4300022: siphon_silver2
+    4300024: tube
+    4300026: vasque2
+    4300028: socle
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
