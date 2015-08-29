@@ -18,6 +18,7 @@ public class clickOnShit : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.E)) {
 			Ray ray = Camera.main.ScreenPointToRay(new Vector3( Screen.width / 2, Screen.height / 2, 0));
 			RaycastHit hit;
+			Debug.Log ("Hello");
 
 			if (Physics.Raycast(ray, out hit)) {
 
