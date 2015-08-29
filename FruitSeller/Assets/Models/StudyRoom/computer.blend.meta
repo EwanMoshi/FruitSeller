@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: c5fd565e1a443d841a40b11b0c7b0484
+timeCreated: 1440823836
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: boitier
+    100002: Boolean_1
+    100004: bouttondvd1
+    100006: bouttondvd2
+    100008: //RootNode
+    100010: Cube_2
+    100012: diode
+    100014: diodedvd1
+    100016: diodedvd2
+    100018: dvd1
+    100020: dvd2
+    100022: jack1vert
+    100024: jack2bleu
+    100026: jack3rouge
+    100028: jackdvd1
+    100030: jackdvd2
+    100032: rackdvd1
+    100034: rackdvd2
+    100036: reset
+    100038: start
+    100040: volumedvd1
+    100042: volumedvd2
+    400000: boitier
+    400002: Boolean_1
+    400004: bouttondvd1
+    400006: bouttondvd2
+    400008: //RootNode
+    400010: Cube_2
+    400012: diode
+    400014: diodedvd1
+    400016: diodedvd2
+    400018: dvd1
+    400020: dvd2
+    400022: jack1vert
+    400024: jack2bleu
+    400026: jack3rouge
+    400028: jackdvd1
+    400030: jackdvd2
+    400032: rackdvd1
+    400034: rackdvd2
+    400036: reset
+    400038: start
+    400040: volumedvd1
+    400042: volumedvd2
+    2300000: boitier
+    2300002: Boolean_1
+    2300004: bouttondvd1
+    2300006: bouttondvd2
+    2300008: Cube_2
+    2300010: diode
+    2300012: diodedvd1
+    2300014: diodedvd2
+    2300016: dvd1
+    2300018: dvd2
+    2300020: jack1vert
+    2300022: jack2bleu
+    2300024: jack3rouge
+    2300026: jackdvd1
+    2300028: jackdvd2
+    2300030: rackdvd1
+    2300032: rackdvd2
+    2300034: reset
+    2300036: start
+    2300038: volumedvd1
+    2300040: volumedvd2
+    3300000: boitier
+    3300002: Boolean_1
+    3300004: bouttondvd1
+    3300006: bouttondvd2
+    3300008: Cube_2
+    3300010: diode
+    3300012: diodedvd1
+    3300014: diodedvd2
+    3300016: dvd1
+    3300018: dvd2
+    3300020: jack1vert
+    3300022: jack2bleu
+    3300024: jack3rouge
+    3300026: jackdvd1
+    3300028: jackdvd2
+    3300030: rackdvd1
+    3300032: rackdvd2
+    3300034: reset
+    3300036: start
+    3300038: volumedvd1
+    3300040: volumedvd2
+    4300000: boitier
+    4300002: dvd1
+    4300004: diode
+    4300006: jackdvd1
+    4300008: diodedvd1
+    4300010: start
+    4300012: Cube_2
+    4300014: rackdvd2
+    4300016: jack3rouge
+    4300018: bouttondvd2
+    4300020: diodedvd2
+    4300022: bouttondvd1
+    4300024: jack2bleu
+    4300026: dvd2
+    4300028: reset
+    4300030: rackdvd1
+    4300032: volumedvd1
+    4300034: Boolean_1
+    4300036: jackdvd2
+    4300038: volumedvd2
+    4300040: jack1vert
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
