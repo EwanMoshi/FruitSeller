@@ -18,4 +18,8 @@ public abstract class ItemHandler : MonoBehaviour {
 	// Whether this item should disappear on use.
 	public abstract bool Consumes();
 
+	// Whether you can use this item.
+	// Check in here for things e.g. must be within 2ft of the radio to use tapes.
+	public abstract bool Usable();
+
 }

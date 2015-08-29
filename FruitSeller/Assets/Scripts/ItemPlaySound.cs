@@ -21,4 +21,8 @@ public class ItemPlaySound : ItemHandler {
 		return true;
 	}
 
+	public override bool Usable() {
+		return true;
+	}
+
 }
