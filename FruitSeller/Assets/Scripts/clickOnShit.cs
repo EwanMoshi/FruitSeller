@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class clickOnShit : MonoBehaviour {
@@ -18,7 +18,6 @@ public class clickOnShit : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.E)) {
 			Ray ray = Camera.main.ScreenPointToRay(new Vector3( Screen.width / 2, Screen.height / 2, 0));
 			RaycastHit hit;
-			Debug.Log ("pushed E");
 
 			if (Physics.Raycast(ray, out hit)) {
 
@@ -36,7 +35,7 @@ public class clickOnShit : MonoBehaviour {
 
 				}
 
-				else if (hit.collider.tag.Equals ("item")){
+				else if (hit.collider.tag.Equals ("item") && hit.distance < range){
 					GameObject obj = hit.collider.gameObject;
 					ItemBehaviour item = obj.GetComponent<ItemBehaviour>();
 
@@ -49,6 +48,12 @@ public class clickOnShit : MonoBehaviour {
 						Destroy(obj);
 					}
 
+				}
+
+				else if (hit.collider.tag.Equals ("interactive") && hit.distance < range) {
+					GameObject obj = hit.collider.gameObject;
+					InteractiveBehaviour ib = obj.GetComponent<InteractiveBehaviour>();
+					InventoryGUI.SetInteractiveDisplay(ib.interactiveDescription, ib.timeToDisplay);
 				}
 
 			}
