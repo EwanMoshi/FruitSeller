@@ -26,7 +26,6 @@ public class clickOnShit : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.E)) {
 			Ray ray = Camera.main.ScreenPointToRay(new Vector3( Screen.width / 2, Screen.height / 2, 0));
 			RaycastHit hit;
-			Debug.Log ("Hello");
 			
 			if (Physics.Raycast(ray, out hit)) {
 				
@@ -37,6 +36,7 @@ public class clickOnShit : MonoBehaviour {
 				Debug.Log ("Object position = " + hit.collider.gameObject.transform.position);
 				Debug.Log ("--------------");
 				*/
+<<<<<<< HEAD
 
 				if(hit.collider.tag == "torch" && hit.distance < range){
 
@@ -56,17 +56,24 @@ public class clickOnShit : MonoBehaviour {
 
 				}
 
+=======
+				/*
+>>>>>>> bc478438df0cf479507b8d3515e93010d6e5bed2
 				if(hit.collider.tag.Equals("switch") && hit.distance < range){
-					
+
+					InteractiveLight light = hit.collider.gameObject.
 					LightSwitch light = hit.collider.gameObject.GetComponent<LightSwitch>();
 					light.clicked();
 					
 				}
+				*/
 				
 				if (interactive(hit.collider.tag) && hit.distance < range) {
 					GameObject obj = hit.collider.gameObject;
 					InteractiveBehaviour ib = obj.GetComponent<InteractiveBehaviour>();
 					InventoryGUI.SetInteractiveDisplay(ib.interactiveDescription, ib.timeToDisplay);
+					Debug.Log ("inteact");
+					ib.exec ();
 				}
 				
 				if (pickupable(hit.collider.tag) && hit.distance < range){
