@@ -99,7 +99,7 @@ public class InventoryGUI : MonoBehaviour {
 			if (interactive(hit.collider.tag) && hit.distance < range) {
 				GameObject obj = hit.collider.gameObject;
 				InteractiveBehaviour ib = obj.GetComponent<InteractiveBehaviour>();
-				GUI.Label (new Rect(HINT_LEFT_OFFSET, Screen.height - HINT_BOTTOM_OFFSET, 100, 25), ib.hint);
+				GUI.Label (new Rect(HINT_LEFT_OFFSET, Screen.height - HINT_BOTTOM_OFFSET, 300, 25), ib.hint);
 			}
 		}
 		
