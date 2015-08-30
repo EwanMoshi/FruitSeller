@@ -82,7 +82,7 @@ public class InventoryGUI : MonoBehaviour {
 	}
 	
 	bool interactive (string tag) {
-		return tag.Equals ("interactive") || tag.Equals ("item + interactive");
+		return tag.Equals ("interactive") || tag.Equals ("item + interactive") || tag.Equals ("torch");
 	}
 	
 	bool pickupable (string tag) {
