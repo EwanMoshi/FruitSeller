@@ -5,7 +5,10 @@ public class clickOnShit : MonoBehaviour {
 	
 	public AudioClip pickupSound;
 	public AudioClip paperSound;
-	
+
+	public DayOneSceneChange controller;
+	public DayTwoController controller2;
+
 	public float range = 2f;
 	// Use this for initialization
 	void Start () {
@@ -56,6 +59,16 @@ public class clickOnShit : MonoBehaviour {
 
 				}
 
+				if(hit.collider.tag.Equals("pillow")&&hit.distance < 6){
+
+					controller.changeScene();
+					
+				}
+				if(hit.collider.tag.Equals("pillow2")&&hit.distance < 6){
+					
+					controller2.changeScene();
+					
+				}
 
 				/*
 >>>>>>> bc478438df0cf479507b8d3515e93010d6e5bed2

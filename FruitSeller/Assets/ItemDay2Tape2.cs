@@ -10,6 +10,10 @@ public class ItemDay2Tape2 : ItemHandler {
 	// What to do when this item gets used.
 	public override void Use() {
 		AudioSource.PlayClipAtPoint(sound2play, Camera.main.transform.position);
+
+		DayTwoController control = GameObject.FindGameObjectWithTag("controller").GetComponent<DayTwoController>();
+		control.complete = true;
+
 	}
 	
 	public override bool Consumes() {

@@ -37,6 +37,11 @@ public class ItemDay1Cassette : ItemHandler {
 		bedBehave.interactiveDescription = "yolo it";
 		bedBehave.timeToDisplay = 2.0f;
 
+	
+		DayOneSceneChange control = GameObject.FindGameObjectWithTag ("controller").GetComponent<DayOneSceneChange>();
+		control.levelComplete = true;
+
+
 	}
 	
 	public override bool Consumes() {
