@@ -36,7 +36,7 @@ public class clickOnShit : MonoBehaviour {
 				Debug.Log ("Object position = " + hit.collider.gameObject.transform.position);
 				Debug.Log ("--------------");
 				*/
-<<<<<<< HEAD
+
 
 				if(hit.collider.tag == "torch" && hit.distance < range){
 
@@ -56,7 +56,7 @@ public class clickOnShit : MonoBehaviour {
 
 				}
 
-=======
+
 				/*
 >>>>>>> bc478438df0cf479507b8d3515e93010d6e5bed2
 				if(hit.collider.tag.Equals("switch") && hit.distance < range){
