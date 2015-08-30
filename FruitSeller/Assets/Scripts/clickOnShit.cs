@@ -36,7 +36,29 @@ public class clickOnShit : MonoBehaviour {
 				Debug.Log ("Object position = " + hit.collider.gameObject.transform.position);
 				Debug.Log ("--------------");
 				*/
+
+
+				if(hit.collider.tag == "torch" && hit.distance < range){
+
+					Destroy(hit.collider.gameObject);
+					GameObject torch= GameObject.FindGameObjectWithTag("flashlight");
+
+					if(torch!=null){
+					Light light = torch.GetComponent<Light>();
+						light.enabled = !light.enabled;
+					}
+				}
+
+
+				if(hit.collider.tag.Equals("door")){
+					door door = hit.collider.gameObject.GetComponent<door>();
+					door.OpenClose();
+
+				}
+
+
 				/*
+>>>>>>> bc478438df0cf479507b8d3515e93010d6e5bed2
 				if(hit.collider.tag.Equals("switch") && hit.distance < range){
 
 					InteractiveLight light = hit.collider.gameObject.
