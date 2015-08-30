@@ -13,7 +13,7 @@ public class clickOnShit : MonoBehaviour {
 	}
 	
 	bool interactive (string tag) {
-		return tag.Equals ("interactive") || tag.Equals ("item + interactive");
+		return tag.Equals ("interactive") || tag.Equals ("item + interactive") || tag.Equals ("torch");
 	}
 	
 	bool pickupable (string tag) {
@@ -38,7 +38,7 @@ public class clickOnShit : MonoBehaviour {
 				*/
 
 
-				if(hit.collider.tag == "torch" && hit.distance < range){
+				if(hit.collider.tag == "torch" && hit.distance < 6){
 
 					Destroy(hit.collider.gameObject);
 					GameObject torch= GameObject.FindGameObjectWithTag("flashlight");
