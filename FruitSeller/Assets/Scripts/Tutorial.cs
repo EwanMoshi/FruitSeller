@@ -15,12 +15,9 @@ public class Tutorial : MonoBehaviour {
 		if (!fired) {
 			fired = true;
 
-			foreach(Light lt in lights){
-				
-				lt.enabled = !lt.enabled;
-				
+			for (int i = 0; i < lights.Length; i++) {
+				if (lights[i] != null) lights[i].enabled = false;
 			}
-
 
 		}
 
