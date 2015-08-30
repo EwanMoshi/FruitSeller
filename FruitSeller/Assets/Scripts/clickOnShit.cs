@@ -48,6 +48,14 @@ public class clickOnShit : MonoBehaviour {
 						light.enabled = !light.enabled;
 					}
 				}
+
+
+				if(hit.collider.tag.Equals("door")){
+					door door = hit.collider.gameObject.GetComponent<door>();
+					door.OpenClose();
+
+				}
+
 				if(hit.collider.tag.Equals("switch") && hit.distance < range){
 					
 					LightSwitch light = hit.collider.gameObject.GetComponent<LightSwitch>();
