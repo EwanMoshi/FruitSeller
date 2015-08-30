@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class InteractiveBehaviour : MonoBehaviour {
@@ -11,4 +11,8 @@ public class InteractiveBehaviour : MonoBehaviour {
 	
 	// What to display when you're standing in front of this.
 	public string hint;
+
+	// What to do when you interact with.
+	public virtual void exec() {}
+
 }
