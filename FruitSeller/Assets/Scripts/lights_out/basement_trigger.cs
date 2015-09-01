@@ -5,6 +5,7 @@ public class basement_trigger : MonoBehaviour {
 
 	public Light turnOff;
 	public Light torch;
+	public Light torch2;
 	public GameObject mannequin;
 	private bool onePlay = true;
 	private bool timed = false;
@@ -26,6 +27,7 @@ public class basement_trigger : MonoBehaviour {
 			timer += Time.deltaTime;
 			if(timer > timeToWait && waited){
 				torch.enabled = !torch.enabled;
+				torch2.enabled = !torch2.enabled;
 				waited = false;
 			}
 
@@ -36,6 +38,7 @@ public class basement_trigger : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if(onePlay){
 		torch.enabled = !torch.enabled;
+			torch2.enabled = !torch2.enabled;
 		}
 	}
 

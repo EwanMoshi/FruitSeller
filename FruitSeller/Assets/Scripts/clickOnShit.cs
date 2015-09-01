@@ -44,11 +44,23 @@ public class clickOnShit : MonoBehaviour {
 				if(hit.collider.tag == "torch" && hit.distance < 6){
 
 					Destroy(hit.collider.gameObject);
-					GameObject torch= GameObject.FindGameObjectWithTag("flashlight");
+					GameObject[] torches = GameObject.FindGameObjectsWithTag("flashlight");
+					//GameObject torch= GameObject.FindGameObjectWithTag("flashlight");
 
-					if(torch!=null){
-					Light light = torch.GetComponent<Light>();
-						light.enabled = !light.enabled;
+
+
+					if(torches!=null){
+						foreach(GameObject torch in torches){
+
+							Light light = torch.GetComponent<Light>();
+							light.enabled = !light.enabled;
+
+						}
+
+				//	Light light = torch.GetComponent<Light>();
+					//	Light light2 = light.GetComponent<Light>();
+					//	light.enabled = !light.enabled;
+					//	light2.enabled = !light2.enabled;
 					}
 				}
 
